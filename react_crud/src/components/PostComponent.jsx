@@ -28,7 +28,7 @@ class PostComponent extends Component {
     }
 
     viewPost(id){
-        this.props.history.push();
+        this.props.history.push('/view-post/'+id);
     }
 
     editPost(id){

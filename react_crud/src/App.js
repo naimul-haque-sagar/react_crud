@@ -4,6 +4,7 @@ import CreatePost from './components/CreatePost';
 import FooterComponent from './components/FooterComponent';
 import HeaderComponent from './components/HeaderComponent';
 import PostComponent from './components/PostComponent';
+import ViewPost from './components/ViewPost';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
               <Route path = "/" exact component = {PostComponent}></Route>
               <Route path = "/posts" component = {PostComponent}></Route>
               <Route path = "/create-post/:ops" component = {CreatePost}></Route>
-              {/* <Route path = "/" component = {PostComponent}></Route> */}
+              <Route path = "/view-post/:ops" component = {ViewPost}></Route>
             </Switch>
           </div>
         <FooterComponent />
